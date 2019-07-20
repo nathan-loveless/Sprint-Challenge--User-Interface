@@ -259,3 +259,21 @@ footer nav a { font-weight: normal; }
 	margin-bottom: 50px;
 }
 
+@keyframes button-animation
+{
+	0% { background-color: #62BEFE; }
+  50% { background-color: #A4DAFF; }
+  100% { background-color: #D9EFFF; }
+}
+
+nav a:hover
+{
+	animation-name: button-animation;
+  	animation-duration: 1.0s; 
+	animation-timing-function: ease-out; 
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}

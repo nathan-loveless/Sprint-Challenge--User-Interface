@@ -38,8 +38,8 @@ Semantic HTML is a method to lay your HTML code out in a way that is understanda
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
-Display: block displays the element in a block where it sets the flow to the next line of the page.  An example is <p>.
-Display: inline displays the content of the element in a single line without adding any type of break after the element. Example is <span>.
+Display: block displays the element in a block where it sets the flow to the next line of the page.  An example is ```<p>```.
+Display: inline displays the content of the element in a single line without adding any type of break after the element. Example is ```<span>```.
 
 3. What are the 4 areas of the box model?
 

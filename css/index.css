@@ -77,6 +77,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+	margin-top: 25px;
 }
 
 .top-content .text-container {
@@ -115,7 +116,7 @@ p {
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bottom-content .text-container {
@@ -143,4 +144,224 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Start of code */
+body
+{
+	width: 800px;
+	margin-left: 20px;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 20px 25px 35px 0px;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav-image
+{
+	width: 157px;
+	height: 40px;	
+	background-image: url("../img/lambda-black.png");
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+.header-about-image
+{
+	width: 800px;
+	height: 153px;	
+	background-image: url("../img/jumbo-about.png");
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+.header-products-image
+{
+	width: 800px;
+	height: 203px;	
+	background-image: url("../img/product.jpg");
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	margin-bottom: 25px;
+
+}
+
+header
+{
+	width: 800px;
+	height: 153px;	
+	background-image: url("../img/jumbo.jpg");
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+.boxes .box:first-child { background-color: teal; }
+.boxes .box:nth-child(2) { background-color: gold; }
+.boxes .box:nth-child(3) { background-color: cadetblue; }
+.boxes .box:nth-child(4) { background-color: coral; }
+.boxes .box:nth-child(5) { background-color: crimson; }
+.boxes .box:nth-child(6) { background-color: forestgreen; }
+.boxes .box:nth-child(7) { background-color: darkorchid; }
+.boxes .box:nth-child(8) { background-color: hotpink; }
+.boxes .box:nth-child(9) { background-color: indigo; }
+.boxes .box:last-child { background-color: dodgerblue; }
+
+footer nav a { font-weight: normal; }
+
+.about-content
+{
+	padding: 20px;
+	border-bottom: 1px dashed black;
+}
+
+.about-section-content
+{
+	display: flex;
+	flex-flow: wrap;
+	margin: 25px 0px 0px 0px;
+	
+}
+
+.grid-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 46%;
+	margin-bottom: 50px;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-bottom: 1px dashed black;
+}
+
+.grid-content h2
+{
+	margin-top: 10px;
+}
+
+.grid-content p
+{
+	margin-top: 10px;
+}
+
+.button
+{	
+	width: 35%;
+	margin: 10px 0px 20px 0px;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+.work-together
+{
+	margin-bottom: 50px;
+}
+
+@keyframes button-animation
+{
+	0% { background-color: #62BEFE; }
+  50% { background-color: #A4DAFF; }
+  100% { background-color: #D9EFFF; }
+}
+
+nav a:hover
+{
+	animation-name: button-animation;
+  	animation-duration: 1.0s; 
+	animation-timing-function: ease-out; 
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+
+
+
+
+.products1-image, .products2-image, .products3-image, .products4-image, .products5-image, .products6-image
+{
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 93px;
+}
+
+.products1-image { background-image: url("../img/products01.png"); }
+.products2-image { background-image: url("../img/products02.png"); }
+.products3-image { background-image: url("../img/products03.png"); }
+.products4-image { background-image: url("../img/products04.png"); }
+.products5-image { background-image: url("../img/products05.png"); }
+.products6-image { background-image: url("../img/products06.png"); }
+
+.products-bar
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: gray;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.products-section
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+
+.products-products
+{
+	display: flex;
+	align-content: center;
+	border: 2px solid black;
+	margin-top: 20px;
+
+}
+
+.products-products:nth-child(1), .products-products:nth-child(3), .products-products:nth-child(5)
+{
+	flex-flow: row-reverse;
+}
+
+.products-products:hover
+{
+	background-color: lightblue;
+	color: white;
+}
+
+.products-products p
+{
+	width: 85%;
+	align-self: center;
+	padding: 10px 20px 10px 10px;
+	
+}
+
+.products-products div
+{
+	width: 15%;
+}
+
+.division
+{
+	height: 1px;
+	background-color: #000000;
+	border: 0 none;
 }
